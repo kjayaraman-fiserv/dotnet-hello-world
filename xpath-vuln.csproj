@@ -10,6 +10,12 @@
         <CSFile Include = "*.cp"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NETCore.App" Version="1.0.0" />
+        <PackageReference Include="Microsoft.NET.SDK" Version="1.0.0" />
+        <PackageReference Include="WindowsAzure.Storage" Version="7.2.1" />
+    </ItemGroup>
+    
     <Target Name="Compile">
         <!-- Run the C# compilation using input files of type CSFile -->
         <CSC
